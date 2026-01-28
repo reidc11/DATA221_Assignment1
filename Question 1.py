@@ -6,3 +6,14 @@
 # • Store the threshold value in a variable.
 # • Keep track of the current multiplier.
 # • Print the final product and the integer that caused the product to exceed the threshold
+
+threshold = 100
+product = 1
+currentNumber = 1
+
+while product <= threshold:
+    currentNumber += 1
+    product = currentNumber*product
+
+print(f"Final Product:{product}")
+print(f"Interger that caused product to exceed the threshold: {currentNumber}")

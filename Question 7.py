@@ -1,6 +1,28 @@
 #Caitlin Reid|30245427   DATA 221 Assignment 1
-# Question 6: Distribution Analysis
-# Define a function that receives a list of numbers and returns a dictionary where:
-# • Each key is a unique value from the list.
-# • Each value is the percentage of elements in the list that are less than or equal to that key.
-# The resulting dictionary should be sorted by key before being returned.
+# Question 7: Time Conversion Function
+# Write a function that converts a given number of seconds since midnight into:
+# • Hours
+# • Minutes
+# • Seconds
+# • AM or PM
+# The function should return a formatted string. If the input is invalid, return an appropriate message.
+
+##what is invalid input? not numbers? What if number of seconds is greater than the amount in 24 hours?
+
+def secondsSinceMinutesTime(seconds):
+    hour = seconds//3600
+    remainingSecondsMinusHours = seconds%3600
+    minutes = remainingSecondsMinusHours//60
+    finalRemainingSeconds = remainingSecondsMinusHours%60
+
+    if hour > 12:
+        amOrPm = "PM"
+        hour = hour - 12
+    else:
+        amOrPM = "AM"
+
+    return (f"{hour} {minutes} {finalRemainingSeconds} {amOrPM}")
+
+#testing
+print(secondsSinceMinutesTime(82623))
+

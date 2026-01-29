@@ -6,3 +6,27 @@
 # • Each value is another dictionary containing:
 # – The length of the string
 # – Whether the length is even or odd
+
+#Done
+
+def wordsEvenOddLength(wordList):
+    outputDictionary={}
+
+    for item in wordList:
+        length = len(item)
+
+        if length % 2 == 0:
+            parity = "Even"
+        else:
+            parity = "Odd"
+
+        outputDictionary[item] = {
+            "Length": length,
+            "Parity": parity
+        }
+
+    return outputDictionary
+
+
+#Test
+print(wordsEvenOddLength (["intro","to","data","science"]))

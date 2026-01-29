@@ -7,6 +7,8 @@
 # • Keep track of the current multiplier.
 # • Print the final product and the integer that caused the product to exceed the threshold
 
+#Done!
+
 threshold = 100
 product = 1
 currentNumber = 1

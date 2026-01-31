@@ -5,6 +5,8 @@
 # • Add a new column derived from existing columns.
 # • Print the final DataFrame.
 
+#Done
+
 import pandas as pd
 
 data = {

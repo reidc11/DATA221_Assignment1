@@ -1,7 +1,6 @@
 #Caitlin Reid|30245427   DATA 221 Assignment 1
 # Question 2 : Nested Dictionary from Strings
-# Define a function that receives a list of strings and returns a dictionary with the following struc-
-# ture:
+# Define a function that receives a list of strings and returns a dictionary with the following structure:
 # • Each key is a string from the list.
 # • Each value is another dictionary containing:
 # – The length of the string
@@ -28,4 +27,4 @@ def wordsEvenOddLength(wordList):
 
 
 #Test
-print(wordsEvenOddLength (["intro","to","data","science"]))
+print(wordsEvenOddLength(["intro","to","data","science"]))

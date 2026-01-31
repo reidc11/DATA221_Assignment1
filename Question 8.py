@@ -19,4 +19,4 @@ dataFrame = pd.DataFrame(data)
 
 dataFrame["D"] = dataFrame["A"] * dataFrame["B"] + dataFrame["C"]
 
-print (dataFrame)
+print(dataFrame)

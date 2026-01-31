@@ -9,26 +9,23 @@
 
 import math
 def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
-    if radiusOfCircle1 <= 0 or radiusOfCircle2 <= 0:
-        return "Invalid input! Radii must be positive integers!"
 
     if not isinstance(radiusOfCircle1, int) or not isinstance(radiusOfCircle2, int):
         return "Invalid input! Radii must be positive integers!"
 
+    if (radiusOfCircle1 <= 0 or radiusOfCircle2 <= 0):
+        return "Invalid input! Radii must be positive integers!"
+
 
     radiusOneArea = math.pi*radiusOfCircle1**2
-    radiuseTwoArea = math.pi*radiusOfCircle2**2
+    radiusTwoArea = math.pi*radiusOfCircle2**2
 
-    if radiusOneArea >= radiuseTwoArea:
-        largerRadius = radiusOfCircle1
-        smallerRadius = radiusOfCircle2
-    else:
-        largerRadius = radiusOfCircle2
-        smallerRadius = radiusOfCircle1
+    smallerArea = min(radiusOneArea, radiusTwoArea)
+    largerArea = max(radiusOneArea, radiusTwoArea)
 
-    percentageLargerCircle = (smallerRadius/largerRadius)*100
+    percentageLargerCircleCoverage = (smallerArea/largerArea)*100
 
-    return percentageLargerCircle
+    return percentageLargerCircleCoverage
 
 print(circleAreaCoverage(5, 10))
 

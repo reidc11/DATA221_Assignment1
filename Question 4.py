@@ -25,4 +25,4 @@ if len(indices) > 0:
     firstIndex = indices[0]
     print(f"First matching index: {firstIndex}")
 else:
-    print("No values are greater than x!")
+    print("No values are greater than or equal to x!")

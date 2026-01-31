@@ -5,11 +5,9 @@
 # • Find all indices where the list value is greater than or equal to x.
 # • Print the sorted list, the value of x, and the first matching index (if one exists).
 
-#Matching? equal or greater than
-
 from random import random
 
-values = [random() for i in range (20)]
+values = [random() for i in range(20)]
 x = random()
 
 values.sort()
@@ -27,4 +25,4 @@ if len(indices) > 0:
     firstIndex = indices[0]
     print(f"First matching index: {firstIndex}")
 else:
-    print("No values are greate than x!")
+    print("No values are greater than x!")

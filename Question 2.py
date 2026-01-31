@@ -7,7 +7,6 @@
 # – The length of the string
 # – Whether the length is even or odd
 
-#Done
 
 def wordsEvenOddLength(wordList):
     outputDictionary={}

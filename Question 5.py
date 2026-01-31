@@ -6,7 +6,6 @@
 # • Returns the percentage of the larger circle’s area that can be covered by the smaller circle.
 # If invalid input is provided, return a meaningful message instead of performing the calculation.
 
-#Done
 
 import math
 def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
